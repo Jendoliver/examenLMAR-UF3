@@ -14,6 +14,14 @@ $(document).ready(function(){
             slidesToShow: 1,
             slidesToScroll: 1
           }
+        },
+        {
+          breakpoint: 500,
+          settings: {
+            dots: false,
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
         }]
     });
 })
