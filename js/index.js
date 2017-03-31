@@ -9,6 +9,7 @@ function init()
     $("#player2").click(addImg); // ex2
     $("#char1").change(changeImg);
     $("#char2").change(changeImg);
+    $(".selectedchar").click(animateImg); // ex4
 }
 
 function altColor()
@@ -34,6 +35,11 @@ function removeImg() // ex3
     $("#imgmid > img").remove();
 }
 
+function animateImg() // ex4
+{
+    $(this).animate({"height":"100px", "width":"100px"},{"duration":3000});
+}
+
 function changeImg()
 {
     if($(this).attr("id") == "char1")
@@ -52,4 +58,5 @@ function changeImg()
         image.css({"left":"300%"});
         image.animate({"left":"0%"},{"duration":500});
     }
+    image.click(animateImg); // ex4
 }
