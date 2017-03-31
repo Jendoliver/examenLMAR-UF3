@@ -4,7 +4,9 @@ $(document).ready(init);
 function init()
 {
     $("#player1").click(altColor);
+    $("#player1").click(removeImg); // ex3
     $("#player2").click(altColor);
+    $("#player2").click(addImg); // ex2
     $("#char1").change(changeImg);
     $("#char2").change(changeImg);
 }
@@ -18,6 +20,18 @@ function altColor()
         case "rgb(0, 128, 0)": $(this).css({"background-color":"red"}); break;
         case "rgb(255, 0, 0)": $(this).css({"background-color":"blue"}); break;
     }
+}
+
+function addImg() // ex2
+{
+    var image = $("<img src=img/ex2.jpg></img>").hide();
+    $("#imgmid").append(image);
+    image.show(500);
+}
+
+function removeImg() // ex3
+{
+    $("#imgmid > img").remove();
 }
 
 function changeImg()
