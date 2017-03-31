@@ -5,6 +5,18 @@ html, body
 }
 
 h1 { color: white; }
+h2 { color: white; }
+
+/* SLIDER */
+#slider-imgs { text-align: center; }
+.imgs img
+{
+    width: 200px;
+    height: 200px;
+    display: inline-block !important;
+}
+
+/* MAP */
 #mapcontainer { text-align: center; }
 #mapa 
 { 

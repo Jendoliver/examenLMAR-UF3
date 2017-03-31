@@ -20,6 +20,12 @@ function init()
                 min: 18,
                 max: 99
             },
+            padre1:
+            {
+                required: true,
+                minlength: 2,
+                maxlength: 8
+            },
             personaje1:
             {
                 required: true
@@ -36,10 +42,17 @@ function init()
                 min: 18,
                 max: 99
             },
+            padre2:
+            {
+                required: true,
+                minlength: 2,
+                maxlength: 8
+            },
             personaje2:
             {
                 required: true
             },
+            
         },
         messages: 
         {
@@ -66,6 +79,18 @@ function init()
                 required:"<div class='formalert'><span class='glyphicon glyphicon-chevron-right'></span> Campo requerido</div>",
                 min:"<div class='formalert'><span class='glyphicon glyphicon-chevron-right'></span> Introduce un número mayor que 18</div>",
                 max:"<div class='formalert'><span class='glyphicon glyphicon-chevron-right'></span> Introduce un número menor que 99</div>"
+            },
+            padre1:
+            {
+                required:"<div class='formalert'><span class='glyphicon glyphicon-chevron-right'></span> Padre obligatorio</div>",
+                minlength:"<div class='formalert'><span class='glyphicon glyphicon-chevron-right'></span> Padre entre 2 y 8 letras</div>",
+                maxlength:"<div class='formalert'><span class='glyphicon glyphicon-chevron-right'></span> Padre entre 2 y 8 letras</div>"
+            },
+            padre2:
+            {
+                required:"<div class='formalert'><span class='glyphicon glyphicon-chevron-right'></span> Padre obligatorio</div>",
+                minlength:"<div class='formalert'><span class='glyphicon glyphicon-chevron-right'></span> Padre entre 2 y 8 letras</div>",
+                maxlength:"<div class='formalert'><span class='glyphicon glyphicon-chevron-right'></span> Padre entre 2 y 8 letras</div>"
             },
             personaje1:
             {
